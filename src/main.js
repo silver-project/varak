@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
+import Sidebar from './components/Sidebar'
 import router from './router'
 
 import BootstrapVue from 'bootstrap-vue'
@@ -18,4 +19,11 @@ new Vue({
   router,
   components: { App },
   template: '<App/>'
+})
+
+new Vue({
+  el: '#sidebar',
+  router,
+  components: { Sidebar },
+  template: '<Sidebar/>'
 })
