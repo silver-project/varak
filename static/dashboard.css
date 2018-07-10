@@ -1,5 +1,6 @@
 body {
   font-size: .875rem;
+  margin: 0;
 }
 
 .feather {
@@ -15,12 +16,31 @@ body {
 [role="main"] {
   padding-top: 48px; /* Space for fixed navbar */
 }
+.col-md-2 {
+  -ms-flex: 0 0 16.666667%;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+}
 
 /*
  * Navbar
  */
 
+.bg-dark {
+  background-color: #343a40;
+}
+.navbar-dark .navbar-brand {
+  padding: 0.3125rem 15px 0.3125rem 15px;
+  color: #fff;
+}
 .navbar-brand {
+  display: block;
   padding-top: .75rem;
   padding-bottom: .75rem;
   font-size: 1rem;
