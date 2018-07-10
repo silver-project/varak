@@ -2,7 +2,8 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import Sidebar from './components/Sidebar'
+import Sidebar from './Sidebar'
+import Dashboard from './Dashboard'
 import router from './router'
 
 import BootstrapVue from 'bootstrap-vue'
@@ -14,6 +15,7 @@ Vue.use(BootstrapVue)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
+
 new Vue({
   el: '#app',
   router,
@@ -26,4 +28,11 @@ new Vue({
   router,
   components: { Sidebar },
   template: '<Sidebar/>'
+})
+
+new Vue({
+  el: '#dashboard',
+  router,
+  components: { Dashboard },
+  template: '<Dashboard/>'
 })
