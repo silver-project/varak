@@ -195,14 +195,3 @@
     text-transform: uppercase;
   }
 </style>
-
-<script>
-
-import Vue from 'vue'
-import VueFeather from 'vue-feather'
-Vue.component(VueFeather.name, VueFeather)
-
-export default {
-}
-
-</script>
