@@ -17,6 +17,9 @@ npm run build
 # build for production and view the bundle analyzer report
 npm run build --report
 
+# Serve built files with a static server
+npm run server-dist
+
 # run unit tests
 npm run unit
 
